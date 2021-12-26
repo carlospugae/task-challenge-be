@@ -41,7 +41,7 @@ export const updateOne = async (req: Request, res: Response, next: NextFunction)
       return res.status(404).send();
     }
 
-    res.status(200).json({ data: updatedTask });
+    res.status(201).json({ data: updatedTask });
   } catch (error) {
     next(error);
   }
